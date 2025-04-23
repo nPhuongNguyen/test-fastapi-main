@@ -18,6 +18,7 @@ class Settings(BaseSettings):
     DB_USERNAME: str
     DB_PASSWORD: str
     DB_DATABASE: str
+    REDIS_HOST: str
 # DATABASE_URL = "mysql+aiomysql://root:12345@localhost/sakila"
     @property
     def DATABASE_URL(self) -> str:
